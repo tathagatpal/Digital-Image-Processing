@@ -10,7 +10,7 @@ image_padded = padarray(image, [4*row 4*col]);
 origin_X = 4*row + 1;
 origin_Y = 4*col + 1;
 
-figure(3);
+figure(1);
 imshow(image_padded);
 title('Original image');
 
@@ -115,6 +115,6 @@ for i = 0:op_size(1)-1
     end
 end
 
-figure(4);
+figure(2);
 imshow(op_img, [0, 255]);
 title('Transformed image');
